@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LoginSuite">
+<parameter name="testng.metrics.report.logo" value = "https://i.ibb.co/FqtQyC5/rfh.png"/>
+<parameter name="testng.metrics.report.name" value = "regression.html"/>
+<parameter name="testng.metrics.report.appendTimestamp" value = "True"/>
+	<test thread-count="5" name="Login">
+		<classes>
+			<class name="events.Login" />
+			<class name="events.Setup" />
+		</classes>
+	</test> <!-- Login -->
+</suite> <!-- LoginSuite -->
