@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SignUpSuit">
+	<parameter name="testng.metrics.report.logo"
+		value="https://i.ibb.co/FqtQyC5/rfh.png" />
 	<parameter name="testng.metrics.report.name"
-		value="MyReport.html" />
+		value="regression.html" />
 	<parameter name="testng.metrics.report.appendTimestamp"
 		value="True" />
-	<parameter name="archive.testng.metrics.report" value="true" />
 	<test thread-count="5" name="SignUp">
 		<classes>
 			<class name="events.SignUp" />
